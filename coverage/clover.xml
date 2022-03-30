@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648662063308" clover="3.2.0">
-  <project timestamp="1648662063308" name="All files">
-    <metrics statements="650" coveredstatements="636" conditionals="95" coveredconditionals="86" methods="56" coveredmethods="55" elements="801" coveredelements="777" complexity="0" loc="650" ncloc="650" packages="4" files="14" classes="14"/>
+<coverage generated="1648678638499" clover="3.2.0">
+  <project timestamp="1648678638499" name="All files">
+    <metrics statements="721" coveredstatements="707" conditionals="104" coveredconditionals="95" methods="64" coveredmethods="63" elements="889" coveredelements="865" complexity="0" loc="721" ncloc="721" packages="7" files="17" classes="17"/>
     <package name="domain.entity">
       <metrics statements="260" coveredstatements="250" conditionals="57" coveredconditionals="53" methods="41" coveredmethods="40"/>
-      <file name="address.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/entity/address.ts">
+      <file name="address.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/entity/address.ts">
         <metrics statements="52" coveredstatements="42" conditionals="11" coveredconditionals="7" methods="8" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -59,7 +59,7 @@
         <line num="51" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
       </file>
-      <file name="customer.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/entity/customer.ts">
+      <file name="customer.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/entity/customer.ts">
         <metrics statements="67" coveredstatements="67" conditionals="15" coveredconditionals="15" methods="13" coveredmethods="13"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -129,7 +129,7 @@
         <line num="66" count="1" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
       </file>
-      <file name="order-item.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/entity/order-item.ts">
+      <file name="order-item.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/entity/order-item.ts">
         <metrics statements="37" coveredstatements="37" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -169,7 +169,7 @@
         <line num="36" count="9" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
       </file>
-      <file name="order.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/entity/order.ts">
+      <file name="order.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/entity/order.ts">
         <metrics statements="54" coveredstatements="54" conditionals="14" coveredconditionals="14" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -226,7 +226,7 @@
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
       </file>
-      <file name="product.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/entity/product.ts">
+      <file name="product.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/entity/product.ts">
         <metrics statements="50" coveredstatements="50" conditionals="11" coveredconditionals="11" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -280,9 +280,98 @@
         <line num="50" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="domain.event.@shared">
+      <metrics statements="50" coveredstatements="50" conditionals="7" coveredconditionals="7" methods="6" coveredmethods="6"/>
+      <file name="event-dispatcher.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/event/@shared/event-dispatcher.ts">
+        <metrics statements="50" coveredstatements="50" conditionals="7" coveredconditionals="7" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.event.product">
+      <metrics statements="13" coveredstatements="13" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="product-created.event.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/event/product/product-created.event.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.event.product.handler">
+      <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="send-email-product-created.handler.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/event/product/handler/send-email-product-created.handler.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="domain.service">
       <metrics statements="30" coveredstatements="28" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
-      <file name="order-service.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/service/order-service.ts">
+      <file name="order-service.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/service/order-service.ts">
         <metrics statements="19" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -304,7 +393,7 @@
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
-      <file name="product-service.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/domain/service/product-service.ts">
+      <file name="product-service.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/domain/service/product-service.ts">
         <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -321,7 +410,7 @@
     </package>
     <package name="infrastructure.db.sequelize.model">
       <metrics statements="129" coveredstatements="129" conditionals="10" coveredconditionals="7" methods="0" coveredmethods="0"/>
-      <file name="customer-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/db/sequelize/model/customer-model.ts">
+      <file name="customer-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/db/sequelize/model/customer-model.ts">
         <metrics statements="37" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -361,7 +450,7 @@
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
       </file>
-      <file name="order-item-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/db/sequelize/model/order-item-model.ts">
+      <file name="order-item-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/db/sequelize/model/order-item-model.ts">
         <metrics statements="37" coveredstatements="37" conditionals="6" coveredconditionals="4" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -401,7 +490,7 @@
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
       </file>
-      <file name="order-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/db/sequelize/model/order-model.ts">
+      <file name="order-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/db/sequelize/model/order-model.ts">
         <metrics statements="36" coveredstatements="36" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -440,7 +529,7 @@
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
       </file>
-      <file name="product-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/db/sequelize/model/product-model.ts">
+      <file name="product-model.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/db/sequelize/model/product-model.ts">
         <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -465,7 +554,7 @@
     </package>
     <package name="infrastructure.repository">
       <metrics statements="231" coveredstatements="229" conditionals="22" coveredconditionals="21" methods="12" coveredmethods="12"/>
-      <file name="customer-repository.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/repository/customer-repository.ts">
+      <file name="customer-repository.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/repository/customer-repository.ts">
         <metrics statements="85" coveredstatements="85" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -553,7 +642,7 @@
         <line num="84" count="1" type="stmt"/>
         <line num="85" count="1" type="stmt"/>
       </file>
-      <file name="order-repository.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/repository/order-repository.ts">
+      <file name="order-repository.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/repository/order-repository.ts">
         <metrics statements="105" coveredstatements="103" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -661,7 +750,7 @@
         <line num="104" count="1" type="stmt"/>
         <line num="105" count="1" type="stmt"/>
       </file>
-      <file name="product-repository.ts" path="/home/iza/fullcycle/06-ddd/ddd-fc/src/infrastructure/repository/product-repository.ts">
+      <file name="product-repository.ts" path="/home/iza/fullcycle/06-ddd/ddd-events-fc/src/infrastructure/repository/product-repository.ts">
         <metrics statements="41" coveredstatements="41" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

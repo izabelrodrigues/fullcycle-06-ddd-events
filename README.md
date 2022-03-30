@@ -1,0 +1,1 @@
+# Módulo 06 - DDD: Modelagem Tática e Patterns - Events

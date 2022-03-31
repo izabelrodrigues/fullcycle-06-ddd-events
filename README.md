@@ -1,5 +1,15 @@
 # Módulo 06 - DDD: Modelagem Tática e Patterns - Events
 
+Antes de executar os testes instale as dependências com npm install
+
+```
+npm install
+```
+Para executar os testes, execute npm test
+
+```
+npm test
+```
 Teste do evento quando um Customer é criado:
 
 ![image](https://user-images.githubusercontent.com/3687713/160956258-7d6cb24f-6128-4a5d-a061-b4b5c4049e53.png)
